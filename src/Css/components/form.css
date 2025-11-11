@@ -1,0 +1,71 @@
+.form {
+
+    background-image: linear-gradient(110deg,
+            rgba(255, 255, 255, 0.8) 0%,
+            rgba(255, 255, 255, 0.8) 50%, transparent 50%),
+        url("../../../form.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.custom-form {
+    width: 50%;
+}
+
+.form-custom {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-custom label,
+.form-custom input {
+    display: block;
+}
+
+.form .custom-form .form-custom input {
+    padding: 20px 20px;
+    outline: none;
+    border-radius: 3px;
+    border: 0;
+    background-color: white;
+    width: 80%;
+    border-bottom: 3px solid rgba(217, 219, 217);
+    font-family: "Lato", sans-serif;
+    box-shadow: 1px 1px 2px rgb(152 152 152 / 50%) inset;
+}
+
+.form .custom-form .form-custom input:focus:valid {
+    border-bottom: 3px solid #27385d;
+    outline: none;
+}
+
+.form .custom-form .form-custom input:focus:not(:valid) {
+    border-bottom: 3px solid orangered;
+    outline: none;
+}
+
+.form-custom input:placeholder-shown+label {
+    opacity: 0;
+    visibility: hidden;
+    top: 20px;
+}
+
+.form-custom label {
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    font-size: 13px;
+    color: gray;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.form .custom-form h1 {
+    margin-bottom: 1.2rem;
+}
